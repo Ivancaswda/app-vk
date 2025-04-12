@@ -404,7 +404,7 @@ export const useAuthStore = create((set, get) => ({
         if (!authUser || get().socket?.connected) { // если socket уже подключен или пользователя просто нету то пропускаем
             return
         }
-        const socket = io('http://localhost:4002/', {
+        const socket = io('http://localhost:2100/', {
             query: {
                 userId: authUser.user._id
             }
