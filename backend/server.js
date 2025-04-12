@@ -13,7 +13,7 @@ import cors from 'cors'
 import path from 'path'
 import {app, server} from "./authMiddlewares/socket.js";
 
-const PORT =  4023
+const PORT =  2100
 const __dirname = path.resolve()
 dotenv.config()
 
